@@ -1,5 +1,5 @@
 import React from 'react'
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import {BrowserRouter as Router, Switch, Route, HashRouter} from 'react-router-dom'
 
 import Header from './components/Header'
 import Footer from './components/Footer'
@@ -8,6 +8,7 @@ import Form from './components/Form'
 
 function App() {
   return (
+    <HashRouter basename="/">
       <Router>
         <Header/>
         <div className="p-3 container">
@@ -17,6 +18,7 @@ function App() {
               </Switch>
           </div>
       </Router>
+    </HashRouter>
   );
 }
 

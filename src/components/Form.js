@@ -88,7 +88,7 @@ function Form() {
     }
     
     // END OF HELPER FUNCTIONS
-
+    // TODO: IMPLEMENT 6 PLAYERS
     return (
         <div>
             <div class="jumbotron container-sm" align="center">
