@@ -31,8 +31,11 @@ function Form() {
                 return newPlayerList
             })
         } else {
-            setPlayerCount(value)
-            initPlayerList(value)
+            // dont overwrite current fields if the same button was clicked
+            if (playerCount !== value){
+                setPlayerCount(value)
+                initPlayerList(value)
+            }
         }
     }
 
@@ -88,25 +91,28 @@ function Form() {
 
     return (
         <div>
-            <div class="jumbotron">
-                <h1 className="container-sm">Player Signup Sheet</h1>
-                <br></br>
-                <div className="container-sm justify-content-center">
-                    <h3>Number of Players:</h3>
+            <div class="jumbotron container-sm" align="center">
+                <h1 className="display-4">Friendlies</h1>
+                <p className="lead">A round-robin bracket generator for rotating doubles</p>
+                <hr className="my-4"/>
+                <div>
+                    <h5>Select Number of Players</h5>
+                    <div className="btn-group" role="group">
                     <FormRadio handleChange={handleChange} name={"playerCount"} value={4} />
                     <FormRadio handleChange={handleChange} name={"playerCount"} value={5} />
-                    <FormRadio handleChange={handleChange} name={"playerCount"} value={6} />
+                    {/* <FormRadio handleChange={handleChange} name={"playerCount"} value={6} /> */}
                     <FormRadio handleChange={handleChange} name={"playerCount"} value={8} />
                     <FormRadio handleChange={handleChange} name={"playerCount"} value={12} />
+                    </div>
                 </div>
                 
                 <br></br>
                 {playerCount > 0 ?  
-                <div className="container-md">
-                    <h3>Enter Player Names</h3>
-                    <form className="input-group mb-3" onSubmit={handleSubmit}>
+                <div>
+                    <h5>Enter Player Names</h5>
+                    <form onSubmit={handleSubmit}>
                         {displayPlayerList()}
-                        <button disabled={!submitEnabled}>Generate Bracket!</button>
+                        <button className="btn" style={!submitEnabled ? {backgroundColor: "grey"} : {color:"white",backgroundColor: "#ef838b"}} disabled={!submitEnabled}>Generate Bracket!</button>
                     </form>
                 </div>
                 : null}

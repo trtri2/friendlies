@@ -40,6 +40,8 @@ function Match(props) {
                     </div>
                 </div>
                 <br/>
+                <br/>
+                
         </div>
     );
 }

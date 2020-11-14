@@ -87,12 +87,13 @@ function Bracket(props) {
     // END OF HELPER FUNCTIONS
 
     return (
-        <div>
+        <div className="">
             {validBracket ?
                 <div className="container">
-                    <Scoreboard playerList={playerList} numRounds={rounds.length}/>
-                    <h3>Bracket</h3>
+                    <h3 className="text-center text-white"><strong>Bracket</strong></h3>
                     {displayRounds()}
+                    <hr/>
+                    <Scoreboard playerList={playerList} numRounds={rounds.length}/>
                 </div>             
             :<h1>You need to create a new game first!</h1>}
         </div>

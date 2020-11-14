@@ -15,14 +15,14 @@ function Scoreboard(props) {
 
     return (
         <div>
-            <h3>Scoreboard</h3>
-            <table className="table table-dark">
+            <h3 className="text-center text-white"><strong>Scoreboard</strong></h3>
+            <table className="table table-striped table-borderless text-white" style={{backgroundColor: "#ef838b"}}>
                 <thead>
                     <tr>
                         <th scope="col">Player</th>
                         <th scope="col">Wins</th>
                         <th scope="col">Losses</th>
-                        <th scope="col">WR %</th>
+                        {/* <th scope="col">WR</th> */}
                     </tr>
                 </thead>
                 <tbody>
@@ -32,13 +32,13 @@ function Scoreboard(props) {
                                 <th scope="row">{player.value}</th>
                                 <td>{player.wins}</td>
                                 <td>{player.losses}</td>
-                                <td>{`${calculatePercentage(player.wins, player.losses)}%`}</td>
+                                {/* <td>{`${calculatePercentage(player.wins, player.losses)}%`}</td> */}
                             </tr>
                         )
                     })}
                 </tbody>
             </table>
-            <button type="button" className="btn btn-md btn-block" style={{backgroundColor: "#85DCB"}}>Raffle</button>
+                {/* TO DO: RAFFLE BRO */}
         </div>
     );
 }

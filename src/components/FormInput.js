@@ -2,10 +2,9 @@ import React from 'react'
 
 function FormInput(props){
     return(
-        <div className="form-check form-check-inline">
-            <label className="form-check-label">
+        <div className="form-group col">
                 <input 
-                    className="form-check-input" 
+                    className="form-control" 
                     type="text"
                     id={props.id}
                     name= {props.name}
@@ -13,7 +12,6 @@ function FormInput(props){
                     placeholder = {props.placeholder}
                     onChange = {props.handleChange}
                 />
-            </label>
         </div>
     );
 }

@@ -18,7 +18,7 @@ function Round(props) {
     )
     return (
         <div>
-            <div className="card text-center bg-dark">
+            <div className="card text-center text-white" style={{backgroundColor: "#E8A87C"}}>
                 <div className="card-header">
                     <h5>{`Round ${props.rid}`}</h5>
                 </div>

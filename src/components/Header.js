@@ -4,15 +4,19 @@ import {Link} from 'react-router-dom'
 function Header() {
     return (
             <div>
-                <br/>
-                <div style={{backgroundColor: "#E8A87C"}} >
+                <div className="navbar" style={{backgroundColor: "#ef838b"}} >
                     <nav className="nav nav-pills nav-fill">
                         <Link className="nav-link" to="/form">
-                            <li className="nav-item" style={{color: "white"}} >New Game</li>
+                            <li className="nav-item" style={{color: "white"}} >Home</li>
                         </Link>
+                        {/* <Link className="nav-link" to="/bracket">
+                            <li className="nav-item" style={{color: "white"}} >Bracket</li>
+                        </Link>
+                        <Link className="nav-link" to="/bracket">
+                            <li className="nav-item" style={{color: "white"}} >Scoreboard</li>
+                        </Link> */}
                     </nav>
                 </div>
-                <br/>
             </div>
     );
 }
