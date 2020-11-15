@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/friendlies/static/js/main.ddebcfda.chunk.js",
-    "main.js.map": "/friendlies/static/js/main.ddebcfda.chunk.js.map",
+    "main.js": "/friendlies/static/js/main.bd772bda.chunk.js",
+    "main.js.map": "/friendlies/static/js/main.bd772bda.chunk.js.map",
     "runtime-main.js": "/friendlies/static/js/runtime-main.1fd9794e.js",
     "runtime-main.js.map": "/friendlies/static/js/runtime-main.1fd9794e.js.map",
-    "static/js/2.5148e79a.chunk.js": "/friendlies/static/js/2.5148e79a.chunk.js",
-    "static/js/2.5148e79a.chunk.js.map": "/friendlies/static/js/2.5148e79a.chunk.js.map",
+    "static/js/2.098fffe0.chunk.js": "/friendlies/static/js/2.098fffe0.chunk.js",
+    "static/js/2.098fffe0.chunk.js.map": "/friendlies/static/js/2.098fffe0.chunk.js.map",
     "index.html": "/friendlies/index.html",
-    "static/js/2.5148e79a.chunk.js.LICENSE.txt": "/friendlies/static/js/2.5148e79a.chunk.js.LICENSE.txt"
+    "static/js/2.098fffe0.chunk.js.LICENSE.txt": "/friendlies/static/js/2.098fffe0.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.1fd9794e.js",
-    "static/js/2.5148e79a.chunk.js",
-    "static/js/main.ddebcfda.chunk.js"
+    "static/js/2.098fffe0.chunk.js",
+    "static/js/main.bd772bda.chunk.js"
   ]
 }
