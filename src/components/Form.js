@@ -41,7 +41,7 @@ function Form() {
 
     function handleSubmit(event){
         event.preventDefault();
-        history.push("/bracket", playerList)
+        history.push("/friendlies/bracket", playerList)
     }
 
     useEffect(() => {

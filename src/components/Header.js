@@ -6,7 +6,7 @@ function Header() {
             <div>
                 <div className="navbar" style={{backgroundColor: "#ef838b"}} >
                     <nav className="nav nav-pills nav-fill">
-                        <Link className="nav-link" to="/form">
+                        <Link className="nav-link" to="/friendlies">
                             <li className="nav-item" style={{color: "white"}} >Home</li>
                         </Link>
                         {/* <Link className="nav-link" to="/bracket">

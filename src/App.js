@@ -13,8 +13,8 @@ function App() {
         <Header/>
         <div className="p-3 container">
               <Switch>
-                <Route path ="/bracket" exact component={Bracket}/>
-                <Route path ="/form" exact component={Form}/>
+                <Route path ="/friendlies/bracket" exact component={Bracket}/>
+                <Route exact path ="/friendlies" exact component={Form}/>
               </Switch>
           </div>
       </Router>
