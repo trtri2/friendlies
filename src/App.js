@@ -8,7 +8,6 @@ import Form from './components/Form'
 
 function App() {
   return (
-    <HashRouter basename="/">
       <Router>
         <Header/>
         <div className="p-3 container">
@@ -18,7 +17,6 @@ function App() {
               </Switch>
           </div>
       </Router>
-    </HashRouter>
   );
 }
 
